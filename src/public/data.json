@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "lastUpdated": "2026-04-13",
+    "visibility": "public"
+  },
+
+  "personal": {
+    "fullName": "Lukas  Genis",
+    "preferredName": "Lukas/Luke",
+    "age": 15,
+    "tagline": "A young man trying to better himself, gain skills, and praise God",
+    "location": {
+      "city": "Lake Country",
+      "country": "Canada"
+    }
+  },
+
+  "bio": {
+    "official": "I like to think I'm talented; I am passionate about creativity, especially with my vibe-coding. I am also passionate about French, Jiu jitsu, and piano."
+  },
+
+  "skills": {
+    "programming": [
+      {
+        "name": "Vibe-coding",
+        "level": "intermediate",
+        "yearsExperience": 2,
+        "projectsUsedIn": ["fecha-nacho", "word-search", "bitey", "striker-mechanical"]
+      },
+    ],
+
+    "languages": [
+      {
+        "name": "English",
+        "level": "native",
+        "certifications": []
+      },
+      {
+        "name": "French",
+        "level": "conversational",
+        "certifications": []
+      }
+    ],
+
+    "music": [
+      {
+        "instrument": "Piano",
+        "yearsExperience": 4,
+        "styles": ["Rock", "Video Game Music", "Pop"],
+        "notablePieces": ["Clint Eastwood, Your New Home (TADC), On Melancholy Hill, Chiquitita"]
+      }
+    ],
+
+    "martialArts": [
+      {
+        "discipline": "Jiu Jitsu",
+        "beltOrLevel": "White Belt(recently got into the professional adult division)",
+        "yearsTraining": 5,
+        "competitions": [0]
+      },
+      {
+        "discipline": "Muay Thai",
+        "beltOrLevel": "Intermediate",
+        "yearsTraining": 2,
+        "competitions": [0]
+      },
+      {
+        "discipline": "Kickboxing",
+        "beltOrLevel": "Intermediate",
+        "yearsTraining": 3,
+        "competitions": [0]
+      }
+    ],
+
+    "softSkills": [
+      "Problem solving",
+      "Teaching",
+      "Self-discipline",
+      "Communication",
+      "Creativity",
+      "Time management"
+    ]
+  },
+
+  "projects": [
+    {
+      "id": "fecha-nacho",
+      "name": "Fecha-Nacho",
+      "status": "completed",
+      "descriptionShort": "A website designed as a prank for my best friend.",
+      "descriptionLong": "A website inspired by some funny photos I have of my best friend; so I decided to make a mock daing website to troll him with those photos. instead of real people seeing it, I made AI bots that comment and like his pictures. And I even made AI personas for each photo so t",
+      "purpose": "Learning project to improve programming and software design skills.",
+      "technologies": ["Visual Studio Code, GitHub, Ubuntu, Opencode"],
+      "features": [
+        "AI chatbots",
+        "User interaction",
+        "Structured project design"
+      ],
+      "challengesSolved": [
+        "Getting the AI chatbots context-driven",
+        "Debugging and testing"
+      ],
+      "screenshots": [],
+      "repoUrl": "",
+      "liveUrl": "fecha-nacho.vercel.app",
+      "team": "Gerson Nazareth, Lukas Genis"
+    },
+
+    {
+      "id": "striker-mechanical",
+      "name": "Striker-Mechanical",
+      "status": "in-progress",
+      "descriptionShort": "A technical project exploring engineering and programming concepts.",
+      "descriptionLong": "Striker-Mechanical is an ongoing project focused on combining programming with mechanical or technical concepts.",
+      "purpose": "To learn engineering thinking and technical problem solving.",
+      "technologies": ["JavaScript"],
+      "features": ["Prototype development", "Iterative design"],
+      "challengesSolved": ["Learning new technical concepts"],
+      "screenshots": [],
+      "repoUrl": "",
+      "liveUrl": "striker-mechanical.vercel.app",
+      "startDate": "2026-01-01",
+      "endDate": "",
+      "team": []
+    },
+
+    {
+      "id": "word-search",
+      "name": "Word Search Generator",
+      "status": "completed",
+      "descriptionShort": "A mini project that generates word search puzzles.",
+      "descriptionLong": "A small programming project created to practice algorithms and problem solving by generating word search puzzles automatically.",
+      "purpose": "Practice algorithms and programming fundamentals.",
+      "technologies": ["Python"],
+      "features": ["Puzzle generation", "Randomized word placement"],
+      "challengesSolved": ["Algorithm design"],
+      "screenshots": [],
+      "repoUrl": "",
+      "liveUrl": "wordsearch.bytebles.com",
+      "startDate": "2025-03-01",
+      "endDate": "2025-03-15",
+      "team": []
+    },
+
+    {
+      "id": "bitey",
+      "name": "Bitey",
+      "status": "prototype",
+      "descriptionShort": "A creative experimental programming project.",
+      "descriptionLong": "Bitey is an experimental project used to explore new ideas and improve programming skills.",
+      "purpose": "Experimentation and creative coding.",
+      "technologies": ["Python"],
+      "features": ["Prototype features"],
+      "challengesSolved": ["Testing new ideas"],
+      "screenshots": [],
+      "repoUrl": "",
+      "liveUrl": "bitey.bytebles.com",
+      "startDate": "2026-02-01",
+      "endDate": "",
+      "team": []
+    }
+  ],
+
+  "experience": [
+    {
+      "title": "Piano Teacher",
+      "organization": "Private Lessons",
+      "type": "teaching",
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "description": "Taught beginner piano students and helped them learn foundational music skills.",
+      "responsibilities": [
+        "Created lesson plans",
+        "Taught music fundamentals",
+        "Helped students practice and improve",
+        "Communicated with parents"
+      ],
+      "skillsGained": [
+        "Teaching",
+        "Leadership",
+        "Communication",
+        "Responsibility"
+      ]
+    }
+  ],
+
+  "education": {
+    "currentSchool": "TBD",
+    "gradeLevel": "High School",
+    "academicInterests": ["Computer Science", "Engineering", "Music"],
+    "favoriteSubjects": ["Math", "Computer Science", "Languages"],
+    "gpaOrAverage": "TBD",
+    "awards": []
+  },
+
+  "achievements": [],
+
+  "extracurriculars": [],
+
+  "goals": {
+    "shortTerm": [
+      "Get accepted into a competitive private school",
+      "Continue building programming projects",
+      "Gain summer job experience"
+    ],
+    "longTerm": [
+      "Become a professional software engineer",
+      "Work on impactful technology projects"
+    ],
+    "dreamCareer": [
+      "Software Engineer",
+      "Tech Entrepreneur"
+    ],
+    "whyThisSchool": "TBD"
+  },
+
+  "contact": {
+    "email": "your@email.com",
+    "phone": "",
+    "availableForSummerJobs": true
+  },
+
+  "links": {
+    "github": "",
+    "portfolioWebsite": "",
+    "linkedin": "",
+    "other": []
+  }
+}

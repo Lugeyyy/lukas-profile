@@ -1,0 +1,321 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Student Portfolio Profile",
+  "type": "object",
+  "required": [
+    "meta",
+    "personal",
+    "bio",
+    "skills",
+    "projects",
+    "experience",
+    "education",
+    "goals",
+    "contact",
+    "links"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["schemaVersion", "lastUpdated", "visibility"],
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "lastUpdated": { "type": "string", "format": "date" },
+        "visibility": {
+          "type": "string",
+          "enum": ["public", "private", "school-only"]
+        }
+      }
+    },
+
+    "personal": {
+      "type": "object",
+      "required": ["fullName", "age", "location"],
+      "properties": {
+        "fullName": { "type": "string" },
+        "preferredName": { "type": "string" },
+        "age": { "type": "number" },
+        "tagline": { "type": "string" },
+        "location": {
+          "type": "object",
+          "properties": {
+            "city": { "type": "string" },
+            "country": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "bio": {
+      "type": "object",
+      "properties": {
+        "short": { "type": "string" },
+        "medium": { "type": "string" },
+        "long": { "type": "string" }
+      }
+    },
+
+    "skills": {
+      "type": "object",
+      "properties": {
+        "programming": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "level"],
+            "properties": {
+              "name": { "type": "string" },
+              "level": {
+                "type": "string",
+                "enum": ["beginner", "intermediate", "advanced"]
+              },
+              "yearsExperience": { "type": "number" },
+              "projectsUsedIn": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "level": {
+                "type": "string",
+                "enum": ["basic", "conversational", "fluent", "native"]
+              },
+              "certifications": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+
+        "music": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "instrument": { "type": "string" },
+              "yearsExperience": { "type": "number" },
+              "styles": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "notablePieces": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+
+        "martialArts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "discipline": { "type": "string" },
+              "beltOrLevel": { "type": "string" },
+              "yearsTraining": { "type": "number" },
+              "competitions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "year": { "type": "number" },
+                    "placement": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "softSkills": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "descriptionShort"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["completed", "in-progress", "prototype"]
+          },
+          "descriptionShort": { "type": "string" },
+          "descriptionLong": { "type": "string" },
+          "purpose": { "type": "string" },
+          "technologies": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "features": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "challengesSolved": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "screenshots": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "repoUrl": { "type": "string" },
+          "liveUrl": { "type": "string" },
+          "link": { "type": "string" },
+          "startDate": { "type": "string", "format": "date" },
+          "endDate": { "type": "string", "format": "date" },
+          "team": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "role": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "organization": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["job", "freelance", "teaching", "volunteer"]
+          },
+          "startDate": { "type": "string", "format": "date" },
+          "endDate": { "type": "string", "format": "date" },
+          "description": { "type": "string" },
+          "responsibilities": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "skillsGained": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "education": {
+      "type": "object",
+      "properties": {
+        "currentSchool": { "type": "string" },
+        "gradeLevel": { "type": "string" },
+        "academicInterests": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "favoriteSubjects": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "gpaOrAverage": { "type": "string" },
+        "awards": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "achievements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "year": { "type": "number" },
+          "description": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["academic", "music", "sports", "coding", "leadership"]
+          }
+        }
+      }
+    },
+
+    "extracurriculars": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "description": { "type": "string" },
+          "yearsInvolved": { "type": "number" }
+        }
+      }
+    },
+
+    "goals": {
+      "type": "object",
+      "properties": {
+        "shortTerm": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "longTerm": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "dreamCareer": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "whyThisSchool": { "type": "string" }
+      }
+    },
+
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "availableForSummerJobs": { "type": "boolean" }
+      }
+    },
+
+    "links": {
+      "type": "object",
+      "properties": {
+        "github": { "type": "string" },
+        "portfolioWebsite": { "type": "string" },
+        "linkedin": { "type": "string" },
+        "other": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../styles/globals.css";
+
+@layer base {
+  :root {
+    @apply font-sans;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .border-gradient {
+    background: linear-gradient(135deg, #22d3ee, #1e40af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+  }
+  
+  .glow-lime {
+    box-shadow: 0 0 20px rgba(132, 204, 22, 0.15);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.15);
+  }
+}
