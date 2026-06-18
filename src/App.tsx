@@ -1,5 +1,6 @@
 import "./index.css";
 
+import { Nav } from "./components/Nav";
 import { Hero } from "./components/sections/Hero";
 import { Bio } from "./components/sections/Bio";
 import { Skills } from "./components/sections/Skills";
@@ -12,8 +13,8 @@ import { DataProvider, useData } from "./context/DataContext";
 
 function LoadingState() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="animate-pulse text-[#64748b] font-mono text-sm">Loading...</div>
+    <div className="min-h-screen flex items-center justify-center bg-[#1c1917]">
+      <div className="animate-pulse text-[#78716c] font-mono text-sm">Loading...</div>
     </div>
   );
 }
@@ -24,7 +25,8 @@ function AppContent() {
   if (loading) return <LoadingState />;
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#1c1917]">
+      <Nav />
       <Hero />
       <main className="max-w-6xl mx-auto px-6 md:px-12">
         <Bio />
@@ -34,8 +36,8 @@ function AppContent() {
         <Education />
         <Goals />
       </main>
-      <footer className="border-t border-border mt-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 py-8">
+      <footer className="border-t border-[#44403c]">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
           <Contact />
         </div>
       </footer>

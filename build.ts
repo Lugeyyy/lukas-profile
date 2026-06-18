@@ -33,7 +33,7 @@ Example:
   process.exit(0);
 }
 
-const toCamelCase = (str: string): string => str.replace(/-([a-z])/g, g => g[1].toUpperCase());
+const toCamelCase = (str: string): string => str.replace(/-([a-z])/g, g => g[1]?.toUpperCase() ?? "");
 
 const parseValue = (value: string): any => {
   if (value === "true") return true;
@@ -137,9 +137,9 @@ const result = await Bun.build({
 
 const end = performance.now();
 
-if (existsSync("./src/data.json")) {
+if (existsSync("./src/public/data.json")) {
   console.log("📄 Copying data.json to dist");
-  await cp("./src/data.json", `${outdir}/data.json`, { force: true });
+  await cp("./src/public/data.json", `${outdir}/data.json`, { force: true });
 }
 
 const outputTable = result.outputs.map(output => ({

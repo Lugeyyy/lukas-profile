@@ -1,5 +1,6 @@
-import { createContext, useContext, ReactNode } from "react";
-import { usePortfolioData, PortfolioData } from "../hooks/usePortfolioData";
+import { createContext, useContext, type ReactNode } from "react";
+import { usePortfolioData } from "../hooks/usePortfolioData";
+import type { PortfolioData } from "../data";
 
 interface DataContextType {
   data: PortfolioData | null;

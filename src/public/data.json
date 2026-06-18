@@ -1,13 +1,13 @@
 {
   "meta": {
-    "schemaVersion": "1.0",
-    "lastUpdated": "2026-04-13",
+    "schemaVersion": "1.1",
+    "lastUpdated": "2026-06-17",
     "visibility": "public"
   },
 
   "personal": {
-    "fullName": "Lukas  Genis",
-    "preferredName": "Lukas/Luke",
+    "fullName": "Lukas Genis",
+    "preferredName": "Lukas",
     "age": 15,
     "tagline": "A young man trying to better himself, gain skills, and praise God",
     "location": {
@@ -48,28 +48,28 @@
         "instrument": "Piano",
         "yearsExperience": 4,
         "styles": ["Rock", "Video Game Music", "Pop"],
-        "notablePieces": ["Clint Eastwood, Your New Home (TADC), On Melancholy Hill, Chiquitita"]
+        "notablePieces": ["Clint Eastwood", "Your New Home (TADC)", "On Melancholy Hill", "Chiquitita"]
       }
     ],
 
     "martialArts": [
       {
         "discipline": "Jiu Jitsu",
-        "beltOrLevel": "White Belt(recently got into the professional adult division)",
+        "beltOrLevel": "White Belt - Adult Division",
         "yearsTraining": 5,
-        "competitions": [0]
+        "competitions": []
       },
       {
         "discipline": "Muay Thai",
         "beltOrLevel": "Intermediate",
         "yearsTraining": 2,
-        "competitions": [0]
+        "competitions": []
       },
       {
         "discipline": "Kickboxing",
         "beltOrLevel": "Intermediate",
         "yearsTraining": 3,
-        "competitions": [0]
+        "competitions": []
       }
     ],
 
@@ -89,9 +89,9 @@
       "name": "Fecha-Nacho",
       "status": "completed",
       "descriptionShort": "A website designed as a prank for my best friend.",
-      "descriptionLong": "A website inspired by some funny photos I have of my best friend; so I decided to make a mock daing website to troll him with those photos. instead of real people seeing it, I made AI bots that comment and like his pictures. And I even made AI personas for each photo so t",
+      "descriptionLong": "A website inspired by funny photos of my best friend. I made a mock dating website to troll him with AI bots that comment and like his pictures, with AI personas for each photo.",
       "purpose": "Learning project to improve programming and software design skills.",
-      "technologies": ["Visual Studio Code, GitHub, Ubuntu, Opencode"],
+      "technologies": ["TypeScript", "React", "OpenAI", "Vercel"],
       "features": [
         "AI chatbots",
         "User interaction",
@@ -104,7 +104,7 @@
       "screenshots": [],
       "repoUrl": "",
       "liveUrl": "fecha-nacho.vercel.app",
-      "team": "Gerson Nazareth, Lukas Genis"
+      "team": []
     },
 
     {
@@ -186,11 +186,11 @@
   ],
 
   "education": {
-    "currentSchool": "TBD",
+    "currentSchool": "",
     "gradeLevel": "High School",
     "academicInterests": ["Computer Science", "Engineering", "Music"],
     "favoriteSubjects": ["Math", "Computer Science", "Languages"],
-    "gpaOrAverage": "TBD",
+    "gpaOrAverage": "",
     "awards": []
   },
 
@@ -212,17 +212,17 @@
       "Software Engineer",
       "Tech Entrepreneur"
     ],
-    "whyThisSchool": "TBD"
+    "whyThisSchool": ""
   },
 
   "contact": {
-    "email": "your@email.com",
+    "email": "",
     "phone": "",
     "availableForSummerJobs": true
   },
 
   "links": {
-    "github": "",
+    "github": "https://github.com/Lugeyyy",
     "portfolioWebsite": "",
     "linkedin": "",
     "other": []

@@ -1,4 +1,4 @@
-import data from "./data.json";
+import data from "./public/data.json";
 
 export type PortfolioData = typeof data;
 
@@ -14,6 +14,7 @@ export interface Personal {
 }
 
 export interface Bio {
+  official?: string;
   short?: string;
   medium?: string;
   long?: string;
